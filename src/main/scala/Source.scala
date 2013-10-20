@@ -51,3 +51,10 @@ object Test {
 //  new UU().uncoveredU
   new Accessor(0)
 }
+
+object SourceBranches {
+  def filteredSizeCoverAllBranches(seq: Seq[Int]): Int = seq filter (_ < 3) size
+  def filteredSizeCoverLtBranch(seq: Seq[Int]): Int = seq filter (_ < 3) size
+  def filteredSizeCoverGtEBranch(seq: Seq[Int]): Int = seq filter (_ < 3) size
+}
+
